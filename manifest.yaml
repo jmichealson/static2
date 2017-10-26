@@ -1,0 +1,7 @@
+---
+applications:
+- name: static2
+  memory: 64M
+  instances: 1
+  env:
+    JOKE: $(python /home/vcap/app/comic_relief/comic_relief.py)
